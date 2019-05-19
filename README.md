@@ -1,15 +1,24 @@
 # GitLab Functions
 
-Auxiliary bash functions for extracting gitlab's files without cloning the entire repository.
+Auxiliary bash functions for extracting gitlab's files using just the Personal Access Token, avoiding cloning the entire repository.
 
-## Where
+## Deps
+
+* git, curl, jq, make
+* docker (optional)
+
+```
+make install-deps
+```
+
+## Parameters
 
     GITLAB_HOST=localhost
     PRIVATE_ACCESS_TOKEN=Jb6EXB21zLwsneNS1zt6
     PROJECT_NAME=my_first_project
+    BRANCH=master
     FOLDER_PATH=folder1
     FILE_PATH=folder1/f1.txt
-    BRANCH=master
     OUTPUT_PATH=/tmp/output
 
 ## Functions
@@ -41,14 +50,8 @@ Get Files onto Folder
 
 ## Running GitLab locally
 
-    docker run -d \
-        -h gitlab.example.com \
-        -p 443:443 -p 80:80 -p 22:22 \
-        --name gitlab \
-        --restart always \
-    gitlab/gitlab-ce:latest
-
+    make docker-gitlab-run
 
 # Ref
 
-* https://docs.gitlab.com/ee/api/README.html
+* [GitLab API](https://docs.gitlab.com/ee/api/README.html)
