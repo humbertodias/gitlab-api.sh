@@ -2,7 +2,7 @@
 
 Auxiliary bash functions for extracting gitlab's files without cloning the entire repository.
 
-# Where
+## Where
 
     GITLAB_HOST=localhost
     PRIVATE_ACCESS_TOKEN=Jb6EXB21zLwsneNS1zt6
@@ -12,7 +12,9 @@ Auxiliary bash functions for extracting gitlab's files without cloning the entir
     BRANCH=master
     OUTPUT_PATH=/tmp/output
 
-Loading functions
+## Functions
+
+Loading
 
     source gitlab-functions.sh
 
@@ -37,7 +39,7 @@ Get Files onto Folder
     gitlab_raw_files localhost $PRIVATE_ACCESS_TOKEN $PROJECT_NAME $FOLDER_PATH $ BRANCH $OUTPUT_PATH
 
 
-# Running GitLab locally
+## Running GitLab locally
 
     docker run -d \
         -h gitlab.example.com \
