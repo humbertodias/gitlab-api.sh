@@ -1,4 +1,4 @@
-# GitLab Functions
+# GitLab Downloader
 
 Auxiliary bash functions for extracting gitlab's files using just the Personal Access Token, avoiding cloning the entire repository.
 
@@ -51,6 +51,10 @@ Get Files onto Folder
 ## Running GitLab locally
 
     make docker-gitlab-run
+
+## Private Access Token
+
+![](etc/gitlab_private_token.png)    
 
 # Ref
 
