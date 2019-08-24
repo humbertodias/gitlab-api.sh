@@ -1,0 +1,8 @@
+source gitlab-functions.sh
+
+PRIVATE_ACCESS_TOKEN=LaPiGixkyF86Z8usXHWr
+PROJECT_NAME=eraseme
+BRANCH=master
+FILE_PATH_LOCAL=/tmp
+FILE_PATH_REMOTE=tmpfolder
+gitlab_create_file gitlab.com $PRIVATE_ACCESS_TOKEN $PROJECT_NAME $BRANCH $FILE_PATH_LOCAL $FILE_PATH_REMOTE

@@ -45,7 +45,12 @@ Get Single file
 
 Get Files onto Folder
 
-    gitlab_raw_files localhost $PRIVATE_ACCESS_TOKEN $PROJECT_NAME $FOLDER_PATH $ BRANCH $OUTPUT_PATH
+    gitlab_raw_files localhost $PRIVATE_ACCESS_TOKEN $PROJECT_NAME $FOLDER_PATH $BRANCH $OUTPUT_PATH
+
+
+Push file
+
+    gitlab_push_file localhost $PRIVATE_ACCESS_TOKEN $PROJECT_NAME $BRANCH $FILE_PATH_LOCAL $FILE_PATH_REMOTE
 
 
 ## Running GitLab locally
